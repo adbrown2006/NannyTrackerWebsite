@@ -1,8 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NannyTracker</title>
 <link rel="stylesheet" href="style.css">
+<style>
+/* Additional styles for homepage hero and feature sections */
+.hero {
+    background: #9457EB;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero button {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.feature-card h3 {
+    color: #9457EB;
+    margin-bottom: 15px;
+}
+.feature-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+</style>
 </head>
 
 <body>
@@ -19,13 +69,45 @@
 </nav>
 </header>
 
-<div class="container">
-<h1>Track Care. Stay Connected.</h1>
-
-<p>NannyTracker helps parents monitor childcare activities, schedules, and milestones all in one place.</p>
-
+<!-- Hero Section -->
+<section class="hero">
+<h1>Stay Organized. Improve Communication. Simplify Childcare.</h1>
+<p>NannyTracker helps families and caregivers track schedules, hours, tasks, mileage, and compensation all in one convenient app. Reduce confusion and stay aligned with everything related to childcare responsibilities.</p>
 <button onclick="location.href='features.html'">Explore Features</button>
+</section>
+
+<!-- Features Section -->
+<section class="container features">
+<div class="feature-card">
+<h3>Track Schedules & Hours</h3>
+<p>Log work hours, childcare schedules, and daily activities to keep parents and caregivers aligned and organized.</p>
 </div>
+
+<div class="feature-card">
+<h3>Manage Daily Tasks</h3>
+<p>Create and monitor checklists, notes, and responsibilities to ensure nothing is missed and communication is clear.</p>
+</div>
+
+<div class="feature-card">
+<h3>Record Mileage & Compensation</h3>
+<p>Track mileage eligible for reimbursement and calculate pay based on hours worked and user-entered rates for transparency and accuracy.</p>
+</div>
+
+<div class="feature-card">
+<h3>Centralized Information</h3>
+<p>Keep all childcare and work-related information in one place to reduce misunderstandings and support informed decision-making.</p>
+</div>
+
+<div class="feature-card">
+<h3>Improve Communication</h3>
+<p>Share updates and monitor activities easily, making collaboration between families and caregivers seamless and reliable.</p>
+</div>
+
+<div class="feature-card">
+<h3>Secure & Responsible</h3>
+<p>NannyTracker is a record-keeping tool only. Users remain responsible for data accuracy and compliance with childcare and employment laws.</p>
+</div>
+</section>
 
 <footer>
 © 2026 NannyTracker
