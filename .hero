@@ -1,0 +1,63 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>NannyTracker</h1>
+    <p>Stay Organized. Simplify Childcare. Track schedules, hours, tasks, mileage, and compensation—all in one convenient app.</p>
+    <button onclick="location.href='features.html'">Explore Features</button>
+  </div>
+</section>
+
+<style>
+.hero {
+    background: linear-gradient(135deg, #9457EB 0%, #6e39c5 100%);
+    background-size: 200% 200%;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+.hero::before {
+    content: "NannyTracker";
+    position: absolute;
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(255,255,255,0.05);
+    top: 10%;
+    left: 5%;
+    transform: rotate(-25deg);
+    white-space: nowrap;
+    pointer-events: none;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.hero button {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    background: white;
+    color: #9457EB;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    position: relative;
+    z-index: 1;
+}
+.hero button:hover {
+    background: #f3f3f3;
+    transform: scale(1.05);
+}
+</style>
