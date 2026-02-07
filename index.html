@@ -7,7 +7,7 @@
 <title>NannyTracker</title>
 <link rel="stylesheet" href="style.css">
 <style>
-/* Additional styles for homepage hero and feature sections */
+/* Hero Section */
 .hero {
     background: #9457EB;
     color: white;
@@ -15,21 +15,31 @@
     padding: 80px 20px;
 }
 .hero h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 .hero button {
     font-size: 1.1rem;
     padding: 15px 30px;
+    background: white;
+    color: #9457EB;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.hero button:hover {
+    background: #f3f3f3;
 }
 
+/* Features Section */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,9 +49,20 @@
 .feature-card {
     background: white;
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+.feature-card svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    fill: #9457EB;
 }
 .feature-card h3 {
     color: #9457EB;
@@ -51,6 +72,21 @@
     color: #555;
     font-size: 0.95rem;
     line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Responsive text */
+@media (max-width: 600px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1rem; }
 }
 </style>
 </head>
@@ -71,42 +107,56 @@
 
 <!-- Hero Section -->
 <section class="hero">
-<h1>Stay Organized. Improve Communication. Simplify Childcare.</h1>
+<h1>Stay Organized. Simplify Childcare.</h1>
 <p>NannyTracker helps families and caregivers track schedules, hours, tasks, mileage, and compensation all in one convenient app. Reduce confusion and stay aligned with everything related to childcare responsibilities.</p>
 <button onclick="location.href='features.html'">Explore Features</button>
 </section>
 
 <!-- Features Section -->
 <section class="container features">
+
 <div class="feature-card">
+<!-- SVG Icon: Clock -->
+<svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1zm0 20a9 9 0 1 1 9-9 9 9 0 0 1-9 9zm.5-14h-1v6l5.25 3.15.5-.86-4.75-2.79z"/></svg>
 <h3>Track Schedules & Hours</h3>
 <p>Log work hours, childcare schedules, and daily activities to keep parents and caregivers aligned and organized.</p>
 </div>
 
 <div class="feature-card">
+<!-- SVG Icon: Checklist -->
+<svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4l-1.5-1.5-8.5 8.5-1.5-1.5L9 11zM3 5h2v14H3V5zm4 0h2v14H7V5zm4 0h2v14h-2V5zm4 0h2v14h-2V5zm4 0h2v14h-2V5z"/></svg>
 <h3>Manage Daily Tasks</h3>
 <p>Create and monitor checklists, notes, and responsibilities to ensure nothing is missed and communication is clear.</p>
 </div>
 
 <div class="feature-card">
+<!-- SVG Icon: Money -->
+<svg viewBox="0 0 24 24"><path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm1 17h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg>
 <h3>Record Mileage & Compensation</h3>
 <p>Track mileage eligible for reimbursement and calculate pay based on hours worked and user-entered rates for transparency and accuracy.</p>
 </div>
 
 <div class="feature-card">
+<!-- SVG Icon: Folder -->
+<svg viewBox="0 0 24 24"><path d="M10 4H2v16h20V6H12l-2-2z"/></svg>
 <h3>Centralized Information</h3>
 <p>Keep all childcare and work-related information in one place to reduce misunderstandings and support informed decision-making.</p>
 </div>
 
 <div class="feature-card">
+<!-- SVG Icon: Chat -->
+<svg viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v14l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>
 <h3>Improve Communication</h3>
 <p>Share updates and monitor activities easily, making collaboration between families and caregivers seamless and reliable.</p>
 </div>
 
 <div class="feature-card">
+<!-- SVG Icon: Shield -->
+<svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5 3.8 9.8 9 11 5.2-1.2 9-6 9-11V5l-9-4z"/></svg>
 <h3>Secure & Responsible</h3>
 <p>NannyTracker is a record-keeping tool only. Users remain responsible for data accuracy and compliance with childcare and employment laws.</p>
 </div>
+
 </section>
 
 <footer>
