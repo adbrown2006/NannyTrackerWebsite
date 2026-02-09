@@ -7,12 +7,35 @@
 <title>NannyTracker</title>
 <link rel="stylesheet" href="style.css">
 <style>
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+header .logo {
+  height: 60px; /* adjust as needed */
+  width: auto;
+}
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+header nav a:hover {
+  color: #9457EB;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #9457EB, #6e39c5);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
@@ -88,6 +111,8 @@ footer {
 @media (max-width: 600px) {
     .hero h1 { font-size: 2.2rem; }
     .hero p { font-size: 1rem; }
+    header { flex-direction: column; align-items: flex-start; }
+    header nav { margin-top: 10px; }
 }
 </style>
 </head>
@@ -95,15 +120,20 @@ footer {
 <body>
 
 <header>
-<h1>NannyTracker</h1>
-<nav>
-<a href="index.html">Home</a>
-<a href="features.html">Features</a>
-<a href="about.html">About</a>
-<a href="faq.html">FAQ</a>
-<a href="contact.html">Contact</a>
-<a href="legal.html">Legal</a>
-</nav>
+  <!-- Logo -->
+  <a href="index.html">
+    <img src="images/logo.png" alt="NannyTracker Logo" class="logo">
+  </a>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="legal.html">Legal</a>
+  </nav>
 </header>
 
 <!-- Hero Section -->
